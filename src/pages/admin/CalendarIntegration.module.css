@@ -1,0 +1,68 @@
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.title { font-size: 22px; font-weight: 700; color: var(--gray-900); }
+.subtitle { font-size: 14px; color: var(--gray-500); margin-top: 4px; }
+
+.grid { display: grid; grid-template-columns: 1fr 380px; gap: 20px; align-items: start; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+.form { display: flex; flex-direction: column; gap: 14px; }
+.dateRow { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+@media (max-width: 600px) { .dateRow { grid-template-columns: 1fr; } }
+
+.actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
+
+.rightPanel { display: flex; flex-direction: column; gap: 16px; }
+
+.instructions { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+.step { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--gray-700); }
+.stepNum {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--primary); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; flex-shrink: 0;
+}
+
+.eventTypes { border-top: 1px solid var(--gray-200); padding-top: 12px; }
+.typesTitle { font-size: 12px; font-weight: 600; color: var(--gray-500); text-transform: uppercase; margin-bottom: 8px; }
+.typeItem {
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border-left: 3px solid;
+  background: var(--gray-50);
+  border-radius: 0 4px 4px 0;
+  font-size: 13px;
+  color: var(--gray-700);
+}
+
+.resultCard { border: 1.5px solid #bbf7d0 !important; }
+.resultDesc { font-size: 14px; color: var(--gray-600); margin-bottom: 14px; }
+.calButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  transition: background 0.15s;
+}
+.calButton:hover { background: var(--primary-dark); }
+
+.urlBox { margin-top: 8px; }
+.urlLabel { font-size: 11px; color: var(--gray-500); margin-bottom: 4px; }
+.urlInput {
+  width: 100%;
+  padding: 6px 10px;
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 11px;
+  color: var(--gray-600);
+  font-family: monospace;
+  cursor: pointer;
+}

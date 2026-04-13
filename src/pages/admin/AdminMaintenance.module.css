@@ -1,0 +1,57 @@
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+.title { font-size: 22px; font-weight: 700; color: var(--gray-900); }
+.subtitle { font-size: 14px; color: var(--gray-500); margin-top: 4px; }
+.loading { color: var(--gray-500); padding: 20px; }
+.empty { color: var(--gray-500); text-align: center; padding: 32px; }
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.filterBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--white);
+  border: 1.5px solid var(--gray-200);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filterBtn:hover { border-color: var(--primary); color: var(--primary); }
+.activeFilter { background: var(--primary); border-color: var(--primary); color: white; }
+.activeFilter:hover { background: var(--primary-dark); }
+.filterCount {
+  background: rgba(255,255,255,0.25);
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.filterBtn:not(.activeFilter) .filterCount {
+  background: var(--gray-100);
+  color: var(--gray-600);
+}
+
+.table { background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow); border: 1px solid var(--gray-200); overflow-x: auto; }
+.table table { width: 100%; border-collapse: collapse; min-width: 700px; }
+.table th { text-align: left; padding: 10px 14px; background: var(--gray-50); color: var(--gray-600); font-size: 12px; font-weight: 600; border-bottom: 1px solid var(--gray-200); white-space: nowrap; }
+.table td { padding: 12px 14px; border-bottom: 1px solid var(--gray-100); font-size: 13px; vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: var(--gray-50); }
+
+.tenantName { font-weight: 600; color: var(--gray-800); }
+.propAddress { font-size: 11px; color: var(--gray-500); margin-top: 2px; }
+.descCell { max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.schedDate { font-size: 12px; color: var(--gray-700); }
+.calLink { font-size: 11px; color: var(--primary); }
+.calLink:hover { text-decoration: underline; }
+
+.editForm { display: flex; flex-direction: column; gap: 14px; }
+.editInfo { background: var(--gray-50); border-radius: var(--radius); padding: 12px; }
+.editDesc { font-size: 13px; color: var(--gray-600); margin-top: 4px; }

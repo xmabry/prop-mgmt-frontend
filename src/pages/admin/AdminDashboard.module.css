@@ -1,0 +1,53 @@
+.loading { padding: 40px; text-align: center; color: var(--gray-500); }
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.title { font-size: 22px; font-weight: 700; color: var(--gray-900); }
+.subtitle { font-size: 14px; color: var(--gray-500); margin-top: 4px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.viewAll { font-size: 13px; color: var(--primary); font-weight: 500; }
+.viewAll:hover { text-decoration: underline; }
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.listItem:last-child { border-bottom: none; }
+
+.itemTitle { font-size: 14px; font-weight: 500; color: var(--gray-800); }
+.itemSub { font-size: 12px; color: var(--gray-500); margin-top: 2px; }
+.itemBadges { display: flex; gap: 4px; }
+.itemRight { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.amount { font-size: 14px; font-weight: 600; color: var(--gray-900); }
+
+.quickLinks { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.quickLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-700);
+  transition: background 0.15s, border-color 0.15s;
+}
+.quickLink:hover { background: var(--primary-light); border-color: var(--primary); color: var(--primary-dark); }
+.quickLink span:first-child { font-size: 20px; }
