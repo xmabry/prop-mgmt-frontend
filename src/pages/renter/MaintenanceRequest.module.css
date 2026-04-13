@@ -1,0 +1,54 @@
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+.title { font-size: 22px; font-weight: 700; color: var(--gray-900); }
+.subtitle { font-size: 14px; color: var(--gray-500); margin-top: 4px; }
+
+.loading { color: var(--gray-500); padding: 20px 0; }
+.successAlert {
+  background: var(--success-light);
+  color: var(--success);
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius);
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px;
+  text-align: center;
+  color: var(--gray-500);
+}
+.emptyIcon { font-size: 48px; }
+
+.requestsList { display: flex; flex-direction: column; gap: 12px; }
+.requestCard { margin: 0 !important; }
+
+.reqHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.reqMeta { display: flex; align-items: center; gap: 8px; }
+.category { font-size: 14px; font-weight: 600; color: var(--gray-800); }
+.date { font-size: 12px; color: var(--gray-500); }
+
+.description { font-size: 14px; color: var(--gray-700); margin-bottom: 6px; }
+.scheduled { font-size: 13px; color: var(--gray-600); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.calLink { color: var(--primary); font-size: 12px; }
+.calLink:hover { text-decoration: underline; }
+.notes { font-size: 13px; color: var(--gray-500); margin-top: 6px; }
+
+.form { display: flex; flex-direction: column; gap: 16px; }

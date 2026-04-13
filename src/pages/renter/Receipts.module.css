@@ -1,0 +1,39 @@
+.loading { color: var(--gray-500); padding: 20px 0; }
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.title { font-size: 22px; font-weight: 700; color: var(--gray-900); }
+.subtitle { font-size: 14px; color: var(--gray-500); margin-top: 4px; }
+
+.empty { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 32px; text-align: center; color: var(--gray-500); }
+.emptyIcon { font-size: 48px; }
+
+.receiptsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.receiptCard { transition: box-shadow 0.15s; }
+.receiptCard:hover { box-shadow: var(--shadow-md); }
+
+.receiptHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.receiptId { font-size: 13px; font-weight: 700; color: var(--gray-700); font-family: monospace; }
+.paidBadge {
+  background: var(--success-light);
+  color: var(--success);
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.receiptDetails { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.detailRow { display: flex; justify-content: space-between; font-size: 13px; }
+.detailRow span:first-child { color: var(--gray-500); }
+.amountRow { padding-top: 8px; border-top: 1px solid var(--gray-200); }
+.amount { font-size: 20px; font-weight: 700; color: var(--gray-900); }
+
+.actions { display: flex; gap: 8px; }

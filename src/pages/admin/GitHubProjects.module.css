@@ -1,0 +1,46 @@
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.title { font-size: 22px; font-weight: 700; color: var(--gray-900); }
+.subtitle { font-size: 14px; color: var(--gray-500); margin-top: 4px; }
+
+.successCard {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--success-light); border: 1px solid #bbf7d0;
+  border-radius: var(--radius); padding: 12px 16px; margin-bottom: 20px;
+}
+.successIcon { font-size: 22px; }
+.successTitle { font-size: 14px; font-weight: 600; color: var(--success); }
+.issueLink { font-size: 13px; color: var(--primary); }
+.issueLink:hover { text-decoration: underline; }
+
+.errorCard {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--danger-light); border: 1px solid #fecaca;
+  border-radius: var(--radius); padding: 12px 16px; margin-bottom: 20px;
+  font-size: 14px; color: var(--danger);
+}
+
+.grid { display: flex; flex-direction: column; gap: 20px; }
+
+.configForm { display: flex; flex-direction: column; gap: 14px; }
+.repoRow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 480px) { .repoRow { grid-template-columns: 1fr; } }
+
+.issueForm { display: flex; flex-direction: column; gap: 14px; }
+.typeRow { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 480px) { .typeRow { grid-template-columns: 1fr; } }
+
+.formActions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
+
+.previewCard { background: var(--gray-900) !important; }
+.preview {
+  font-family: monospace; font-size: 12px; line-height: 1.6;
+  white-space: pre-wrap; word-break: break-word;
+  color: var(--gray-200); overflow-x: auto;
+}
+
+.guide { display: flex; flex-direction: column; gap: 16px; }
+.guideSection {}
+.guideTitle { font-size: 14px; font-weight: 600; color: var(--gray-800); margin-bottom: 4px; }
+.guideText { font-size: 13px; color: var(--gray-600); line-height: 1.5; }
+.guideList { font-size: 13px; color: var(--gray-600); padding-left: 18px; line-height: 1.7; }
+.guideList code { background: var(--gray-100); padding: 1px 4px; border-radius: 3px; font-size: 12px; }

@@ -1,0 +1,24 @@
+.loading { color: var(--gray-500); padding: 20px; }
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+.title { font-size: 22px; font-weight: 700; color: var(--gray-900); }
+.subtitle { font-size: 14px; color: var(--gray-500); margin-top: 4px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 20px; }
+
+.filters { display: flex; gap: 8px; margin-bottom: 20px; }
+.filterBtn { padding: 6px 16px; border: 1.5px solid var(--gray-200); border-radius: 999px; background: var(--white); font-size: 13px; color: var(--gray-600); cursor: pointer; }
+.filterBtn:hover { border-color: var(--primary); color: var(--primary); }
+.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.propCard { transition: box-shadow 0.15s; }
+.propCard:hover { box-shadow: var(--shadow-md); }
+
+.propHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.propIcon { font-size: 28px; }
+
+.propAddress { font-size: 15px; font-weight: 600; color: var(--gray-900); margin-bottom: 2px; }
+.propCity { font-size: 13px; color: var(--gray-500); margin-bottom: 12px; }
+
+.propDetails { display: flex; flex-direction: column; gap: 8px; }
+.propRow { display: flex; justify-content: space-between; font-size: 13px; }
+.propRow span:first-child { color: var(--gray-500); }

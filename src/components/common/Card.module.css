@@ -1,0 +1,27 @@
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--gray-200);
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 20px 0;
+  gap: 12px;
+}
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+.subtitle {
+  font-size: 13px;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+.body {
+  padding: 16px 20px 20px;
+}
